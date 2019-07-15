@@ -1,0 +1,51 @@
+{
+  "name": "angular-http-etag",
+  "description": "Angular module allowing easy use of ETags",
+  "main": "./release/angular-http-etag.js",
+  "authors": [
+    "Shaun Grady"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "angular",
+    "$http",
+    "etag",
+    "cache",
+    "$cacheFactory",
+    "localStorage",
+    "sessionStorage",
+    "web storage",
+    "entity tag",
+    "interceptor",
+    "decorator",
+    "If-None-Match"
+  ],
+  "homepage": "https://github.com/shaungrady/angular-http-etag",
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "docs",
+    "test",
+    "coverage"
+  ],
+  "dependencies": {
+    "angular": ">=1.2 <1.7"
+  },
+  "version": "2.0.17",
+  "_release": "2.0.17",
+  "_resolution": {
+    "type": "version",
+    "tag": "v2.0.17",
+    "commit": "462d1033caeda2b8867667f81a4e3af47e5aed2b"
+  },
+  "_source": "https://github.com/shaungrady/angular-http-etag.git",
+  "_target": "2.0.17",
+  "_originalSource": "angular-http-etag"
+}

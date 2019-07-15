@@ -2,9 +2,7 @@
     "author": "Exygy",
     "description": "DAHLIA is the affordable housing portal for the City and County of San Francisco.",
     "license": "GPL-3.0",
-    "dependencies": {
-        "bower": "1.8.8"
-    },
+    "dependencies": {},
     "devDependencies": {
         "chai": "4.0.2",
         "chai-as-promised": "7.0.0",

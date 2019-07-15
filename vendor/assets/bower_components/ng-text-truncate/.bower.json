@@ -1,0 +1,13 @@
+{
+  "name": "ng-text-truncate",
+  "homepage": "https://github.com/Exygy/ng-text-truncate",
+  "_release": "41962abca1",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "41962abca1484b172bf4cdb234d5664d71fc2734"
+  },
+  "_source": "https://github.com/Exygy/ng-text-truncate.git",
+  "_target": "*",
+  "_originalSource": "Exygy/ng-text-truncate"
+}

@@ -1,0 +1,80 @@
+{
+  "name": "angular-http-etag",
+  "version": "2.0.17",
+  "description": "Angular module for easy ETag-based caching of $http responses",
+  "homepage": "https://github.com/shaungrady/angular-http-etag",
+  "author": "Shaun Grady (http://shaungrady.com)",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "module": "src/index.js",
+  "jsnext:main": "src/index.js",
+  "scripts": {
+    "bundle": "webpack && npm run bundle-umd",
+    "bundle-umd": "webpack --config webpack.config.browser.js && webpack --config webpack.config.browser-min.js",
+    "test": "karma start && karma start --ng 1.5 && eslint .",
+    "test-start": "karma start --no-single-run",
+    "pretest": "rm -rf coverage/",
+    "posttest": "istanbul-combine -r lcov -r html coverage/angular_*/**/*.json",
+    "patch": "npm version patch -m '%s'",
+    "preversion": "npm run test",
+    "version": "rm -rf lib/ release/ && npm run bundle && git add -A lib/ release/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shaungrady/angular-http-etag.git"
+  },
+  "keywords": [
+    "angular",
+    "$http",
+    "etag",
+    "cache",
+    "$cacheFactory",
+    "localStorage",
+    "sessionStorage",
+    "web storage",
+    "entity tag",
+    "interceptor",
+    "decorator",
+    "If-None-Match"
+  ],
+  "bugs": {
+    "url": "https://github.com/shaungrady/angular-http-etag/issues"
+  },
+  "dependencies": {
+    "array-map": "^0.0.0",
+    "deepcopy": "^0.6.3",
+    "object-keys": "^1.0.11"
+  },
+  "peerDependencies": {
+    "angular": ">=1.2 <1.7"
+  },
+  "devDependencies": {
+    "angular": "~1.6.1",
+    "angular-mocks": "~1.6.1",
+    "chai": "^3.5.0",
+    "chai-spies": "^0.7.1",
+    "codeclimate-test-reporter": "^0.4.0",
+    "eslint": "^3.8.1",
+    "eslint-config-standard": "^6.2.0",
+    "eslint-plugin-promise": "^3.0.0",
+    "eslint-plugin-standard": "^2.0.1",
+    "istanbul-combine": "^0.3.0",
+    "istanbul-instrumenter-loader": "^2.0.0",
+    "karma": "^1.4.0",
+    "karma-commonjs": "^1.0.0",
+    "karma-coverage": "^1.1.1",
+    "karma-mocha": "^1.3.0",
+    "karma-phantomjs-launcher": "^1.0.2",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-webpack": "^2.0.1",
+    "mocha": "^3.2.0",
+    "webpack": "^2.2"
+  },
+  "files": [
+    "src/*.js",
+    "lib/*.js",
+    "release/angular-http-etag.js",
+    "readme.md",
+    "LICENSE.md"
+  ]
+}
