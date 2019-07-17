@@ -1,0 +1,36 @@
+{
+  "name": "textAngularJs",
+  "version": "2.1.2",
+  "main": [
+    "./dist/textAngular.js",
+    "./dist/textAngular-sanitize.js",
+    "./dist/textAngularSetup.js",
+    "./dist/textAngular.css"
+  ],
+  "description": "A fork of textAngular that can be used on Angular 1.7+",
+  "keywords": [
+    "editor",
+    "angular",
+    "wysiwyg"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test*",
+    "demo*",
+    "Gruntfile.js",
+    "package.json"
+  ],
+  "dependencies": {
+    "angular": ">=1.3.x",
+    "font-awesome": ">=4.0.x",
+    "rangy": "~1.3.0"
+  },
+  "devDependencies": {
+    "angular-mocks": ">=1.3.x",
+    "jquery": "1.9.x"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/antosarho/textAngularJs"
+}
