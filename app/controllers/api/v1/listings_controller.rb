@@ -5,7 +5,8 @@ class Api::V1::ListingsController < ApiController
   def index
     # params[:ids] could be nil which means get all open listings
     # params[:ids] is a comma-separated list of ids
-    @listings = Force::ListingService.listings(listings_params)
+    # @listings = Force::ListingService.listings(listings_params)
+    @listings = MultiJson.load(Rails.root.join('spec/javascripts/fixtures/json/listings-api-index.json'))
     render json: { listings: @listings }
   end
 
